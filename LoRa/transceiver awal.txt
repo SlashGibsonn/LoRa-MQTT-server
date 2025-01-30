@@ -1,0 +1,70 @@
+//Arduino 
+
+#include <SPI.h>
+#include <LoRa.h>
+
+int counter = 0;
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+
+  Serial.println("LoRa Sender");
+
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
+  } 
+}
+
+void loop() {
+  Serial.print("Sending packet: ");
+  Serial.println(counter);
+
+  // send packet
+  LoRa.beginPacket();
+  LoRa.print("Hello ");
+  LoRa.print(counter);
+  LoRa.endPacket();
+
+  counter++;
+  
+  delay(1000);
+}
+
+
+==============================
+
+//ESP8266
+
+#include <LoRa.h>
+#define ss 15
+#define rst 16
+#define dio0 2
+
+void setup() {
+  Serial.begin(9600);
+  while (!Serial);
+  
+  Serial.println("LoRa Receiver");
+  LoRa.setPins(ss, rst, dio0);
+  if (!LoRa.begin(433E6)) {
+    Serial.println("Starting LoRa failed!");
+    while (1);
+  }
+}
+
+void loop() {
+  int packetSize = LoRa.parsePacket();
+  if (packetSize) {
+    
+    // received a packet
+    Serial.print("Received packet :");
+
+    // read packet
+    while (LoRa.available()) {
+      Serial.print((char)LoRa.read());
+    }
+   Serial.println("");
+  }
+}
