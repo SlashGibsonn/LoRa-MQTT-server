@@ -8,9 +8,9 @@
 #define rst 16
 #define dio0 2
 
-const char* ssid = "Yomel 2";        // Ganti dengan SSID WiFi Anda
-const char* password = "Yomel123";  // Ganti dengan password WiFi Anda
-const char* mqtt_server = "192.168.2.92";  // Ganti dengan alamat server MQTT Anda
+const char* ssid = "**";        
+const char* password = "**";  
+const char* mqtt_server = "192.168.2.92";  
 
 WiFiClient espClient;
 PubSubClient client(espClient);

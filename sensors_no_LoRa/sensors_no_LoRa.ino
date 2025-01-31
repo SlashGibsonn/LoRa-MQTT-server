@@ -9,8 +9,8 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "Yomel 2";
-const char* password = "Yomel123";
+const char* ssid = "**";
+const char* password = "**";
 const char* mqtt_server = "192.168.2.92";
 
 WiFiClient espClient;
