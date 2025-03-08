@@ -1,4 +1,5 @@
 Projek MQTT kombinasi LoRa
 
-![LoRa MQTT](https://github.com/user-attachments/assets/cdc6e93c-ba63-4d8a-98d9-949d2cd5c070)
+![LoRa MQTT](https://github.com/user-attachments/assets/012958c2-70a5-4fdb-8d9c-990206396440)
+
 
