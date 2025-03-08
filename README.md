@@ -1,5 +1,6 @@
 Skema
 
-![LoRa MQTT](https://github.com/user-attachments/assets/012958c2-70a5-4fdb-8d9c-990206396440)
+![LoRa MQTT](https://github.com/user-attachments/assets/21d70350-9964-4dfc-b969-ebb0a4dbedeb)
+
 
 
