@@ -1,6 +1,7 @@
 Skema
 
-![alat](https://github.com/user-attachments/assets/b200dc9b-f9d8-4b24-83c8-f3686e4822de)
+![Skripsi](https://github.com/user-attachments/assets/146d787a-b8ac-44dd-8c2b-d1f1bce190af)
+
 
 
 
